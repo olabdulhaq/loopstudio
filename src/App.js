@@ -45,7 +45,7 @@ function App() {
           <li className={`header__list ${showNav ? "header__list--mobile" : ""}`}>Careers</li>
           <li className={`header__list ${showNav ? "header__list--mobile" : ""}`}>Events</li>
           <li className={`header__list ${showNav ? "header__list--mobile" : ""}`}>Products</li>
-          <li className={`header__list ${showNav ? "header__item--mobile" : ""}`}>Support</li>
+          <li className={`header__list ${showNav ? "header__list--mobile" : ""}`}>Support</li>
         </ul>
         <i className="header__toggle" onClick={handleShowNav}>
           {/* {`{<img src={hamburger} alt="" />} ${showNav ? <img src={close} alt="" /> : ""}`} */}
@@ -198,6 +198,12 @@ function App() {
           <li className="footer__list--2">Events</li>
           <li className="footer__list--2">Products</li>
           <li className="footer__list--2">Support</li>
+      </ul>
+      <ul className="footer__item footer__item--mobile">
+          <img src={facebook}  alt="" className="footer__list" />
+          <img src={twitter}   alt="" className="footer__list" />
+          <img src={pinterest} alt=""   className="footer__list" />
+          <img src={instagram} alt=""   className="footer__list" />
       </ul>
       <ul>
         <p className="footer__copyright">&copy; 2021 Loopstudios. All rights reserved</p>
